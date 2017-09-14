@@ -1,0 +1,172 @@
+body{
+  background-image: url(assets/texture.jpg);
+  margin: 0;
+}
+
+#sky{
+background-image: url(assets/background.jpg);
+top:0px;
+background-color:#87CEFA;
+position:absolute;
+width:100%;
+height:220px;
+}
+
+#light{
+	left:100px;
+	top:0px;
+    position: absolute;
+	background-image: url(assets/Stoplight.png);
+	width: 98px;
+    height: 124px;
+	pointer-events:none;
+}
+
+
+button{
+	top:38px;
+	left:106px;
+	position:relative;
+	background-color:red;
+	width:15px;
+	height:50px;
+	border:none;
+	}
+
+	
+button:focus{
+	top:38px;
+	left:106px;
+	position:relative;
+	background-color:#00FF00;
+	width: 15px;
+	height:50px;}
+	
+	
+#finishline{
+  padding-left:800px;
+  width: 100px;
+  height: 300px;
+  
+}
+
+.checkered {
+  height:300px;
+  width:100px;
+  background-color:white;
+  
+  background-image:
+      -moz-linear-gradient(45deg, #000 25%, transparent 25%), 
+      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+    background-image:
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)), 
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #000));
+	  
+    -moz-background-size:100px 100px;
+    background-size:100px 100px;
+    -webkit-background-size:100px 101px;
+    background-position:0 0, 50px 0, 50px -50px, 0px 50px; 
+  }
+
+#trackBorder{
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: red;
+    border-width: 40px;
+	
+	
+	
+}
+
+#track {
+    position: relative;
+    left: 0 width: 100%;
+    height: 300px;
+    background-color: grey;
+}
+
+#container {
+    bottom: 40px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-color: white;
+    border-width: 40px;
+}
+#animate {
+  top: 0px;
+  width: 129px;
+  height: 132px;
+  position: absolute;
+  background-image: url(assets/yoshi.png);
+  border-style:none;
+}
+
+
+#second {
+  top: 160px;
+  width: 129px;
+  height: 132px;
+  position: absolute;
+  background-image: url(assets/mario.png);
+  
+}
+#rematch{
+margin:0;
+color:white;
+padding-left:50px;
+font-size:30px;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+
+#demo{
+width:580px;
+height:180px;
+border-radius: 25px;
+font-family:Comic Sans MS;
+top: 40px;
+padding-left:40px;
+font-size:100px;
+opacity: 0.5;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+	color:red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 10; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: 10;  
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {color:red;}
+    25%  {color:orange;}
+    50%  {color:yellow;}
+    75%  {color:orange;}
+    100% {color:red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color:red;}
+    25%  {color:orange;}
+    50%  {color:yellow;}
+    75%  {color:orange;}
+    100% {color:red;}
+}
